@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Josefin;
+    src: url(./Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url(./Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin2;
+    src: url(./Josefin_Sans/static/JosefinSans-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: -webkit-linear-gradient(top, #c6df97, #86b7dd);
+    background-size: cover;
+    /* background: #000; */
+}
+
+form {
+    background-color: #fff;
+    width: 450px;
+    border-radius: 25px;
+    height: 600px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 30px auto 50px;
+    /* box-shadow: 5px 5px 5px 5px #505050; */
+}
+
+form h1 {
+    font-family: Playfair;
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+}
+
+label {
+    font-family: Josefin;
+    font-weight: 900;
+    color: #000;
+    /* font-weight: bold; */
+    padding-bottom: 5px;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+input {
+    font-family: Josefin2;
+    font-weight: 600;
+    border: 2px solid #8fbc3d;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+input:focus {
+    border: 2px solid #1571b6;
+}
+
+#button-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-family: Playfair;
+    font-weight: 800;
+    flex-grow: 1;
+    width: 125px;
+    margin: 25px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button#send {
+    background: #8fbc3d;
+}
+
+button#send:focus {
+    border: 2px solid #fff;
+}
+
+button#reset {
+    background: #1571b6;
+}
+
+button#reset:focus {
+    border: 2px solid #fff;
+}
