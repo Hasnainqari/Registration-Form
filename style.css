@@ -73,7 +73,6 @@ input {
 input:focus {
     border: 2px solid #1571b6;
 }
-
 #button-row {
     display: flex;
     justify-content: space-evenly;

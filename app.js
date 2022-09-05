@@ -29,7 +29,7 @@ resetBtn.addEventListener('click', (e) => {
 });
 
 //Now Start SendBtn
-function registeration (){
+function registeration() {
     sendBtn.addEventListener('click', (e) => {
         let city = document.getElementById('city');
         let course = document.getElementById('course');
@@ -37,27 +37,22 @@ function registeration (){
         let email = document.getElementById('email');
         let phone = document.getElementById('phone');
         let cnic = document.getElementById('cnic');
-    
-        //Set Value And LocalStorage
-        
-        city = city.value;
-        localStorage.setItem('city', city);
-        
-        course = course.value;
-        localStorage.setItem('course', course);
-    
-        name = name.value;
-        localStorage.setItem('name', name);
-    
-        email = email.value;
-        localStorage.setItem('email', email);
-    
-        phone = phone.value;
-        localStorage.setItem('phone', phone);
-    
-        cnic = cnic.value;
-        localStorage.setItem('cnic', cnic);
-    
+
+
     });
 }
 registeration();
+
+function formData(){
+    var registrationForm = 
+        {
+            cityName: city.value,
+            courseName: course.value,
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            cnic: cnic.value,
+        } 
+    
+    localStorage.setItem("Data",JSON.stringify(registrationForm));
+}
