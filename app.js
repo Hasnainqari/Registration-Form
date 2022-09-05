@@ -29,7 +29,6 @@ resetBtn.addEventListener('click', (e) => {
 });
 
 //Now Start SendBtn
-function registeration() {
     sendBtn.addEventListener('click', (e) => {
         let city = document.getElementById('city');
         let course = document.getElementById('course');
@@ -40,8 +39,7 @@ function registeration() {
 
 
     });
-}
-registeration();
+
 
 function formData(){
     var registrationForm = 
